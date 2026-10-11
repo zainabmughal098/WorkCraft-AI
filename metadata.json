@@ -1,0 +1,6 @@
+{
+  "name": "WorkCraft AI - Custom Workplace App Studio",
+  "description": "Build, customize, and run AI apps tailored to your work. Automate repetitive tasks using the Google AI Studio workplace app framework.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
