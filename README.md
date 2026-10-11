@@ -1,136 +1,84 @@
-# WorkCraft AI — Custom Workplace App Studio
+# WorkCraft AI ⚡
 
-> **Build, customize, and run AI apps tailored to your daily work.**  
-> Built for the Google AI Studio lab: *"Build with AI: A custom app to help you at work"*.
+> **Custom Workplace App Studio powered by Google Gemini 3.8 Flash**  
+> Build, customize, and run AI apps tailored to your daily workflow.
 
-[![Powered by Gemini](https://img.shields.io/badge/Model-Gemini%203.8%20Flash-4285F4?logo=google&logoColor=white)](https://ai.google.dev/)
-[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+🌐 **Live Demo:** [work-craft-ai.vercel.app](https://work-craft-ai.vercel.app/)
 
 ---
 
-## 🌟 What is WorkCraft AI?
+## 🎯 What it Does
 
-**WorkCraft AI** is an intelligent workplace app studio designed to eliminate repetitive, tedious tasks. Instead of manual drafting, data restructuring, and cross-channel formatting, WorkCraft AI lets anyone define a custom workplace tool using Google AI Studio's signature formula:
+WorkCraft AI automates repetitive workplace tasks using the Google AI Studio formula:
 
-$$\text{“My app takes [inputs] and does [process] to create [output] that helps me [goal].”}$$
+> **“My app takes [inputs] and does [process] to create [output] that helps me [goal].”**
 
-With one click, Gemini 3.8 Flash analyzes your context and generates:
-1. **Executive Briefings & Deliverables:** Comprehensive, formatted documents, drafts, and copy.
-2. **Spreadsheet-Ready Matrices:** Structured tables with a 1-click **"Copy for Spreadsheet"** button formatted for instant paste into Google Sheets and Microsoft Excel.
-3. **Iterative Adjustments:** In-flight refinements using conversational instructions (*"Add 3 TikTok hooks"*, *"Make tone warmer"*, *"Add risk flags"*).
+Instead of drafting everything manually, it generates ready-to-use documents and structured spreadsheet tables (with a 1-click **"Copy for Spreadsheet"** button formatted for Google Sheets and Excel).
 
 ---
 
-## 📋 Direct Lab Tasks Alignment
+## 🛠️ Tools & Tech Stack
 
-This application implements every step of the official Google AI Studio curriculum:
+### Frontend
+- **React 19:** Modern functional component architecture & state management
+- **TypeScript:** Strict type safety across UI blueprints and API responses
+- **Tailwind CSS v4:** Styling, custom color palettes, and glassmorphism UI
+- **Lucide React:** Iconography for tool categories and interactive controls
+- **Vite 8:** Frontend build tool, local dev server, and asset bundler
 
-| Lab Task | Feature in App | Description |
+### Backend
+- **Node.js & Express 4:** REST API server handling request parsing and routing
+- **@google/genai SDK:** Official Google GenAI TypeScript SDK running **Gemini 3.8 Flash**
+- **tsx:** High-performance TypeScript execution engine for server scripts
+- **dotenv:** Environment variable configuration
+
+### Deployment
+- **Vercel:** Hosting for the single-page application and serverless `/api` backend endpoints
+
+---
+
+## 💼 Built-In Workplace Apps
+
+| App | Role | What it Generates |
 | :--- | :--- | :--- |
-| **Optional Step** | **Worksheet / Idea Workshop** | Input your role and daily challenges; Gemini brainstorms 4 high-value workplace app ideas following the exact formula. |
-| **Step 1** | **Describe & Build App** | Paste or customize `I want to build an app that takes [inputs] and does [process] to create [output] that helps me [goal]`. The app automatically generates input fields and execution logic. |
-| **Step 2** | **Iterate on Your App** | One-click **"Copy for Spreadsheet"** button (TSV/CSV clipboard copy), plus conversational prompt modifications (`Add [element] that [purpose]`). |
-| **Step 3** | **Visual Styling** | Interactive visual theme customizer supporting the lab's **"Shades of Blue"** AI Studio theme, as well as Workspace Emerald, Modern Slate, Warm Amber, and Midnight Dark mode. |
-| **Step 4** | **Share Your App** | Interactive **"Publish your app"** toggle switch, public link generator (`?standalone=true`), iframe embed code, and distraction-free teammate view. |
+| **Holiday Campaign Hub** | Social Media Manager | Multi-channel posts (Instagram, LinkedIn, X), image prompts, posting calendar |
+| **Meeting Action Matrix** | Project Manager | Executive TL;DR, task matrix (owners & deadlines), follow-up email draft |
+| **Customer Support Responder** | Support Lead | 3 tone-adjusted replies (Warm, Direct, VIP), escalation risk scores |
+| **Weekly Snippets Synthesizer** | Team Operations | Executive wins briefing, team kudos callouts, weekly commitment tracker |
 
 ---
 
-## 🚀 Pre-Configured Workplace Tools Included
+## 🚀 Key Features
 
-WorkCraft AI ships with 4 production-grade workplace presets ready to test immediately with 1-click sample data:
-
-### 1. 🎨 Holiday Campaign & Creative Visuals Hub *(Lab Reference Example)*
-- **Role:** Social Media Manager
-- **Inputs:** Holiday/occasion, brand niche, tone of voice, promotional offer.
-- **Deliverables:** Multi-channel posts (Instagram caption + carousel concepts, LinkedIn thought leadership, X threads), 3 AI image generation prompts (photorealistic, vector graphic, lifestyle), and a spreadsheet calendar.
-
-### 2. 📊 Executive Meeting Notes to Action Matrix
-- **Role:** Project Manager / Chief of Staff
-- **Inputs:** Raw meeting bullets or chaotic transcripts.
-- **Deliverables:** Executive 3-bullet decision summary, prioritized Action Items Matrix (Task ID, Owner, Deadline, Priority, Status), and a copy-paste follow-up email draft.
-
-### 3. 💬 Customer Inquiry & De-escalation Responder
-- **Role:** Customer Support / Client Success Lead
-- **Inputs:** Customer complaint text and internal company resolution policies.
-- **Deliverables:** Emotional sentiment analysis, 3 tone variants (Warm Empathy, Direct Professional, Executive Concierge), internal ticket notes, and escalation risk rating.
-
-### 4. 📈 Weekly Team Snippets & VP Status Synthesizer
-- **Role:** Engineering & Operations Lead
-- **Inputs:** Fragmented updates and blocker notes from individual team members.
-- **Deliverables:** VP-level wins summary, blocker escalation flags, team kudos callouts, and next week's commitment matrix.
+- **💡 Idea Workshop:** Input your job role and challenges to brainstorm 4 custom app blueprints.
+- **⚡ 1-Click Execution:** Realistic sample data pre-filled for immediate testing.
+- **📊 Spreadsheet Integration:** Instant TSV/CSV clipboard copy formatted for Google Sheets and Excel.
+- **🔄 Live Iteration:** Tweak results on the fly (*"Add 3 TikTok hooks"*, *"Make tone friendlier"*).
+- **🎨 Visual Themes:** 5 custom palettes (including Google AI Studio's *Shades of Blue*).
+- **🔗 Share & Publish:** Built-in public URL generator and distraction-free teammate view.
 
 ---
 
-## 🛠️ Tech Stack & Architecture
+## 💻 Local Development
 
-- **Frontend:** React 19, TypeScript, Tailwind CSS v4, Lucide Icons.
-- **Backend:** Node.js, Express, `tsx`.
-- **AI Intelligence:** `@google/genai` TypeScript SDK (`gemini-3.8-flash`) executed strictly server-side for speed and security.
-- **Build Tooling:** Vite 8.
-
-```
-├── server.ts                    # Express server + Gemini AI endpoints + Vite middleware
-├── src/
-│   ├── App.tsx                  # Main app controller, routing, and state
-│   ├── components/
-│   │   ├── Header.tsx           # Navigation bar, catalog dropdown & controls
-│   │   ├── LabGuideBanner.tsx   # Interactive step-by-step lab companion
-│   │   ├── AppRunner.tsx        # Dynamic input form, execution engine & iteration bar
-│   │   ├── SpreadsheetTableView.tsx # Interactive table + "Copy for Spreadsheet"
-│   │   ├── WorksheetBrainstormer.tsx# Step 0 idea generator
-│   │   ├── CustomAppBuilderModal.tsx# Step 1 custom template parser
-│   │   ├── VisualThemeModal.tsx # Step 3 color customizer (Shades of Blue)
-│   │   ├── ShareModal.tsx       # Step 4 publish & distribute dialog
-│   │   ├── HowToUseModal.tsx    # 30-second beginner guide
-│   │   └── MarkdownView.tsx     # Clean deliverable renderer
-│   ├── data/
-│   │   ├── presets.ts           # Rich preset workplace tool blueprints
-│   │   └── themes.ts            # Visual color schemes (Blue, Emerald, Slate, Amber, Dark)
-│   └── types.ts                 # TypeScript interfaces
-├── metadata.json                # AI Studio capability registry
-└── index.html                   # Application entry point
-```
-
----
-
-## ⚡ Quick Start
-
-### 1. Prerequisites
-- Node.js 20+
-- A Gemini API Key from [Google AI Studio](https://aistudio.google.com/)
-
-### 2. Environment Setup
-Create a `.env` file in the root directory (refer to `.env.example`):
+### 1. Clone & Install
 ```bash
-GEMINI_API_KEY="your-gemini-api-key-here"
-PORT=3000
+git clone https://github.com/zainabmughal098/WorkCraft-AI.git
+cd WorkCraft-AI
+npm install
 ```
 
-### 3. Run Development Server
+### 2. Configure Environment
+Create `.env` in the project root:
+```env
+GEMINI_API_KEY="your-gemini-api-key-here"
+```
+
+### 3. Run Dev Server
 ```bash
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### 4. Build for Production
-```bash
-npm run build
-npm start
-```
+Open [http://localhost:3000](http://localhost:3000).
 
 ---
 
-## 💡 How to Use
-
-1. **Pick a Tool:** Select any workplace preset from the top bar (e.g. *Holiday Campaign Hub*).
-2. **Execute (1-Click):** Click **"Run Now"** (realistic sample data is already filled in).
-3. **Copy to Spreadsheet:** Switch to the **Spreadsheet Table** tab and click **"Copy for Spreadsheet"** to paste directly into Google Sheets or Excel.
-4. **Iterate:** Use the iteration bar to type changes like *"Add 3 short video hooks"* or *"Format as a Slack announcement"*.
-5. **Publish:** Click **"Share"**, flip the **"Publish your app"** switch, and share the URL with your team.
-
----
-
-## 📄 License
-Apache-2.0 License. Built with Google AI Studio.
