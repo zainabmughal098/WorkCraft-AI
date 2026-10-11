@@ -382,11 +382,22 @@ export const AppRunner: React.FC<AppRunnerProps> = ({
           {output ? (
             <div className={`p-6 rounded-2xl border transition-all ${isDark ? 'bg-slate-900 border-slate-800' : 'bg-white border-slate-200/90 shadow-xs'}`}>
               {/* Executive Summary banner */}
-              <div className={`p-4 rounded-xl border mb-5 ${isDark ? 'bg-slate-800/80 border-slate-700' : 'bg-blue-50/70 border-blue-200'}`}>
-                <div className="flex items-center gap-2 mb-1">
-                  <Sparkles className="w-4 h-4 text-blue-600 dark:text-sky-400" />
-                  <span className={`text-xs font-bold uppercase tracking-wider ${isDark ? 'text-sky-300' : 'text-blue-900'}`}>
-                    Executive Summary
+              <div className={`p-4 rounded-xl border mb-5 relative overflow-hidden ${
+                isDark
+                  ? 'bg-gradient-to-r from-blue-950/60 via-slate-900 to-indigo-950/40 border-blue-800/80'
+                  : 'bg-gradient-to-r from-blue-50/90 via-white to-indigo-50/60 border-blue-200/90 shadow-xs'
+              }`}>
+                <div className="flex items-center justify-between mb-1.5">
+                  <div className="flex items-center gap-2">
+                    <div className="p-1 rounded-md bg-blue-600 text-white">
+                      <Sparkles className="w-3.5 h-3.5" />
+                    </div>
+                    <span className={`text-xs font-bold uppercase tracking-wider ${isDark ? 'text-sky-300' : 'text-blue-900'}`}>
+                      Executive Briefing & Key Decisions
+                    </span>
+                  </div>
+                  <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-blue-100 text-blue-800 dark:bg-blue-900/60 dark:text-blue-300">
+                    Gemini 3.8 Flash
                   </span>
                 </div>
                 <p className={`text-xs font-medium leading-relaxed ${isDark ? 'text-slate-200' : 'text-slate-800'}`}>
